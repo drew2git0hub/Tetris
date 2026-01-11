@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tetris</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/tetris.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div class="score-board">
+            Score: <span id="score">0</span>
+        </div>
+        <div id="start-screen" class="overlay">
+            <h1>Tetris</h1>
+            <button onclick="startGame()">PLAY GAME</button>
+        </div>
+        <div id="game-over-screen" class="overlay hidden">
+            <h1>Game Over</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <button onclick="resetGame()">RETURN</button>
+        </div>
+    </div>
+</body>
+</html>
